@@ -14,7 +14,6 @@ import android.os.Message
 import android.support.v4.app.ActivityCompat
 import android.support.v4.content.ContextCompat
 import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import kotlinx.android.synthetic.main.activity_main.*
 import org.jetbrains.anko.alert
 import org.jetbrains.anko.toast
@@ -153,7 +152,6 @@ class MainActivity : AppCompatActivity() {
     private fun startUpdateProgress() {
         //获取当前进度
         val process: Int = iService?.getProgress() ?: 0
-        Log.e("更新进度:" , process.toString())
         //更新进度更新
         updateProgress(process)
         //定时更新进度
