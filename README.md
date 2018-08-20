@@ -11,3 +11,5 @@ APP 版本更新升级 (强制更新和非强制更新)
 2.APKDownLoadService: 通过DownloadManager安卓系统下载类进行下载
   DownloadManager下载完成后会发出广播，注册广播接受者，监听到下载完成，开始安装apk;
   通过内容观察者ContentObserver来监听DownloadManager下载进度，监听的下载文件路径的URI为"content://downloads/my_downloads"
+  
+![image](https://github.com/EvaZhang321/VersionUpdateApplication/blob/master/img/20180820105827.png)
